@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 const Head = () => {
     return (
         <div className="flex shadow-lg py-4">
@@ -6,12 +9,13 @@ const Head = () => {
   alt="Food-logo"
   src="food.webp"
 />
-<div className="flex p-5 space-x-6 " >
+<div className=" p-5 space-x-6 " >            
+               <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/contact">Contact</Link>
+              <Link to="/cart">Cart</Link>
+
               
-              <ul className="cursor-pointer"> Home</ul>
-              <ul className="cursor-pointer"> About</ul>
-              <ul>Contact </ul>
-              <ul> Cart</ul>
             </div>
           <div className="col-span-10 px-10">
             
